@@ -2,7 +2,6 @@ node('master') {
     try {
         stage('build') {
 
-            checkout main
             echo 'test - art';
             // Install dependencies, create a new .env file and generate a new key, just for testing
             sh "composer install"
